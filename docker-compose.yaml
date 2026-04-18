@@ -1,12 +1,9 @@
 version: '3.8'
-
 services:
-  cheesexp-bot:
+  roleguard-bot:
     build: .
-    container_name: cheesexp_bot_prod
+    container_name: roleguard_bot_prod
     restart: unless-stopped
-    ports:
-      - "6880:6880"
     env_file:
       - .env
     volumes:
