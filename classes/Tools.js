@@ -6,8 +6,7 @@ const Discord = require('discord.js')
 class Tools {
     constructor(client, int) {
         
-        this.WEBSITE = config.siteURL
-        if (!this.WEBSITE.startsWith("http")) this.WEBSITE = "https://gdcolon.com/polaris" // backup URL or some buttons will break
+        this.WEBSITE = config.github || "https://github.com/NablaCheese505/RoleGuard-Bot";
 
         this.COLOR = 0x00ff80   // polaris green
 
